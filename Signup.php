@@ -6,6 +6,7 @@ if (isset($_POST['login'])) {
 
 	$first_name=$_POST['first_name'];
 	$last_name=$_POST['last_name'];
+	$gender=$_POST['gender'];
 	$email=$_POST['email'];
 	$tel_no=$_POST['tel_no'];
 	$passwrd=$_POST['password'];
@@ -14,7 +15,7 @@ if (isset($_POST['login'])) {
 	$repassword=md5($repasswrd);
 	$repassword1=sha1($repasswrd);
 	if ($password==$repassword) {
-		$query="INSERT INTO user(first_name,last_name,email,tel_no,password,confirm_password) VALUES ('$first_name','$last_name','$email','$tel_no','$password','$repassword1')";
+		$query="INSERT INTO user(first_name,last_name,gender,email,tel_no,password,confirm_password) VALUES ('$first_name','$last_name','$gender','$email','$tel_no','$password','$repassword1')";
 		$result=mysqli_query($connection,$query);
 		if ($result) {
 			echo "Data Added";
@@ -80,6 +81,7 @@ if (isset($_POST['login'])) {
 		<h2 style="color: #fff;">Sign Up</h2><br>
 		<input type="text" name="first_name" placeholder="First Name"><br><br>
 		<input type="text" name="last_name" placeholder="Last Name"><br><br>
+		<input type="text" name="gender" placeholder="Gender"><br><br>
 		<input type="email" name="email" placeholder="E-mail"><br><br>
 		<input type="text" name="tel_no" placeholder="Tel. No."><br><br>
 		<input type="password" name="password" placeholder="Password"><br><br>
