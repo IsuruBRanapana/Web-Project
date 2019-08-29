@@ -16,7 +16,7 @@
 				$gender = $row['gender'];
 
 				/*echo $first_name;
-				echo $last_name;
+				/*echo $last_name;
 				echo $email;
 				echo $tel_no;
 				echo $gender;*/
@@ -35,7 +35,30 @@
 </head>
 <body>
 	<form action="booking3.php" method="post">
-		<input type="submit" name="submit" value="Submit">
+		<?php 
+			echo "First Name : ";
+			echo "<input type ='text' name='first_name1' value='".$first_name."'><br>";
+			echo "Last Name : ";
+			echo "<input type ='text' name='last_name1' value='".$last_name."'><br>";
+			echo "E-mail : ";
+			echo "<input type ='text' name='email1' value='".$email."'><br>";
+			echo "Tel. No. : ";
+			echo "<input type ='text' name='tel_no1' value='".$tel_no."'><br>";
+			echo "Gender : ";
+			echo "<input type ='text' name='gender1' value='".$gender."'><br>"; 
+
+		?>
+		From : 
+		<input type="date" name="from_date"><br>
+		To : 
+		<input type="date" name="to_date"><br>
+		Number of adults : 
+		<input type="text" name="number_of_adults"><br>
+		Number of children : 
+		<input type="text" name="number_of_childs"><br>
+		Number of rooms : 
+		<input type="text" name="rooms"><br>
+		<input type="submit" name="submit" value="Submit"><br>
 	</form>
 </body>
 </html>
