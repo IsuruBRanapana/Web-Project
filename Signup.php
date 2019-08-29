@@ -12,8 +12,9 @@ if (isset($_POST['login'])) {
 	$password=md5($passwrd);
 	$repasswrd=$_POST['repassword'];
 	$repassword=md5($repasswrd);
+	$repassword1=sha1($repasswrd);
 	if ($password==$repassword) {
-		$query="INSERT INTO user(first_name,last_name,email,password) VALUES ('$first_name','$last_name','$email','$password')";
+		$query="INSERT INTO user(first_name,last_name,email,tel_no,password,confirm_password) VALUES ('$first_name','$last_name','$email','$tel_no','$password','$repassword1')";
 		$result=mysqli_query($connection,$query);
 		if ($result) {
 			echo "Data Added";
