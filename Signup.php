@@ -29,70 +29,69 @@ if (isset($_POST['login'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-	<title>Sign Up</title>
-	<link rel="stylesheet" type="text/css" href="Signup.css">
-	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-	<style>
-		#msg{
-			visibility: hidden;
-			min-width: 250px;
-			background-color: yellow;
-			color: #000;
-			text-align: center;
-			border-radius: 2px;
-			padding: 16px;
-			position: fixed;
-			z-index: 1;
-			right: 30%;
-			top: 30px
-			font-size:17px;
-			margin-right: 30px;
-		}
-
-		#msg.show{
-			visibility: visible;;
-			-webkit-animation:fadein 0.5s, fadeout 0.5s 2.5s;
-			animation:fadein 0.5s, fadeout 0.5s 2.5s;
-		}
-		@-webkit-keyframes fadein{
-			from{top: 0; opacity: 0;}
-			to{top: 30px;opacity: 1;}
-		}
-		@keyframes fadein{
-			from{top: 0; opacity: 0;}
-			to{top: 30px;opacity: 1;}
-		}
-		@-webkit-keyframes fadeout{
-			from{top: 30px; opacity: 1;}
-			to{top: 0;opacity: 0;}
-		}
-		@keyframes fadeout{
-			from{top: 30px; opacity: 1;}
-			to{top: 0;opacity: 0;}
-		}
-	</style>
+	<title>Booking</title>
+	<link href="Style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="signup">
-	<form action="Signup.php" method="post">
-		<h2 style="color: #fff;">Sign Up</h2><br>
-		<input type="text" name="first_name" placeholder="First Name"><br><br>
-		<input type="text" name="last_name" placeholder="Last Name"><br><br>
-		<input type="text" name="gender" placeholder="Gender"><br><br>
-		<input type="email" name="email" placeholder="E-mail"><br><br>
-		<input type="text" name="tel_no" placeholder="Tel. No."><br><br>
-		<input type="password" name="password" placeholder="Password"><br><br>
-		<input type="password" name="repassword" placeholder="Confirm Password"><br><br>
-		<input type="submit" name="login" value="Sign Up">
-	</form>
-	</div>
-	<br>
-	<br>
-	<div id="home">
-		<a href="login.php"><input type="submit" value="Log In" style="margin-left: 30px;"></a>
+	<div class="body">
+		<div class="nav">
+			<ul>
+				<li><a href="Home.php">Home</a></li>
+				<li><a href="Events.php">Events</a></li>
+				<li><a href="Pictures.php">Portfolio</a></li>
+				<li><a href="Booking.php">Booking</a></li>
+				<li><a href="About Me.php">About Us</a></li>
+			</ul>
+		</div>
+		<div>
+			<center>
+			<div id="intro">
+				<div class="inpt">
+					<form action="Signup.php" method="post" class="form">
+						<h2 style="color: #fff;">Sign Up</h2><br>
+						<input type="text" name="first_name" placeholder="First Name" class="inpt"><br><br>
+						<input type="text" name="last_name" placeholder="Last Name" class="inpt"><br><br>
+						<input type="text" name="gender" placeholder="Gender" class="inpt"><br><br>
+						<input type="email" name="email" placeholder="E-mail" class="inpt"><br><br>
+						<input type="text" name="tel_no" placeholder="Tel. No." class="inpt"><br><br>
+						<input type="password" name="password" placeholder="Password" class="inpt"><br><br>
+						<input type="password" name="repassword" placeholder="Confirm Password" class="inpt"><br><br>
+						<input type="submit" name="login" value="Sign Up">
+					</form>
+				</div>
+				<br>
+				<br>
+				<div class="inpt">
+					<a href="login.php"><input type="submit" value="Log In" style="margin-left: 30px;"></a>
+				</div>
+				<br>
+				<br>
+				<br>
+			</div>
+			</center>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div>
+			<marquee id="marqueetool">Lemonardo Resort</marquee>
+		</div>
+		<div id="like">
+			<p>Like Me...</p>
+		</div>
+
+		<div id="mar">
+			<ul>
+				<li><img src="Images/facebook1.png" id="marqueeim"></li>
+				<li><img src="Images/blogger.png" id="marqueeim"></li>
+				<li><img src="Images/twitter.png" id="marqueeim"></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
 	</div>
 </body>
 </html>

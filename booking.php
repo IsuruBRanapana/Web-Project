@@ -1,6 +1,6 @@
 <?php 
 	if (isset($_POST['login'])) {
-		header('Location: login1.php');
+		header('Location: login.php');
 	}elseif (isset($_POST['signup'])) {
 		header('Location: Signup.php');
 	}

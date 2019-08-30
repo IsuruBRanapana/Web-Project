@@ -1,0 +1,159 @@
+body{
+	background-color:black;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top:0px;
+}
+.body{
+	background:url(Images/body2.jpg);
+	background-attachment: fixed;
+
+}
+
+
+.nav{
+	margin-top: 0px;
+	color: #D7A345;
+	
+}
+
+.nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+	color:#232222;
+	background-color: #ef224d ;
+	border-radius: 5px;
+	opacity: 0.8
+}
+
+.nav ul li{
+	font-size: 17px;
+	display: inline;
+	text-decoration: none;
+	vertical-align: middle;
+	
+}
+
+
+
+.nav ul li a{
+	text-align:center;
+	line-height: 30px;
+	padding: 5px;
+	color: #272727;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-right: 25px;
+	margin-left: 105px;
+	box-sizing: border-box;
+
+}
+.nav ul li a:hover{
+	color: aliceblue;
+}
+
+}
+#marqueetool{
+	font-size: 18px;
+	background-color: black;
+	color: #ef224d;
+	opacity: 0.8;
+	margin-bottom: 0px;
+	border-width: 0px;
+}
+#like{
+	margin-top: 0px;
+	font-size: 30px;
+	width: 500px;
+	float: left;
+	border-width: 0px;
+}
+
+#marqueeim{
+	width: 30px;
+	height: 30px;
+}
+#mar ul li{
+	display: inline;
+	text-decoration: none;
+	align-items: right; 
+
+
+}
+#marb{
+}
+
+
+.signin{
+	background: rgba(44,62,80,0.7);
+	padding: 40px;
+	width: 250px;
+	margin: auto;
+	/*margin-top: 200px;*/
+	height: 400px
+	margin-left:180x;
+}
+form
+{
+	width: 240px;
+	text-align: center;
+}
+input{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border:none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color:#fff;
+}
+input[type=submit]{
+	border:none;
+	width: 190px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	color: #fff;
+	background-color: black;
+}
+h2{
+	color: white;
+}
+a{
+	color:yellow;
+	text-decoration: blink;
+}
+a:hover{
+	color: skyblue;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+::placeholder{
+	color: aliceblue;
+	opacity: 0.8;
+}
+#home{
+	background: rgba(44,62,80,0.7);
+	padding: 40px;
+	width: 250px;
+	margin: auto;
+	margin-left:auto;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
