@@ -34,3 +34,4 @@
 			echo "Fail";
 		}
 ?>
+<?php mysqli_close($connection); ?>

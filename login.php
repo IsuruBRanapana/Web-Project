@@ -56,7 +56,7 @@
 		<div>
 			<center>
 			<div id="intro">
-				<form action="login2.php" method="post" class="form">
+				<form action="login.php" method="post" class="form">
 					<div class="inpt">
 						<h2 style="color: white">Log In </h2>
 						<?php  

@@ -51,13 +51,13 @@ if (isset($_POST['login'])) {
 				<div class="inpt">
 					<form action="Signup.php" method="post" class="form">
 						<h2 style="color: #fff;">Sign Up</h2><br>
-						<input type="text" name="first_name" placeholder="First Name" class="inpt"><br><br>
-						<input type="text" name="last_name" placeholder="Last Name" class="inpt"><br><br>
-						<input type="text" name="gender" placeholder="Gender" class="inpt"><br><br>
-						<input type="email" name="email" placeholder="E-mail" class="inpt"><br><br>
-						<input type="text" name="tel_no" placeholder="Tel. No." class="inpt"><br><br>
-						<input type="password" name="password" placeholder="Password" class="inpt"><br><br>
-						<input type="password" name="repassword" placeholder="Confirm Password" class="inpt"><br><br>
+						<input type="text" name="first_name" placeholder="First Name" class="inpt" required><br><br>
+						<input type="text" name="last_name" placeholder="Last Name" class="inpt" required><br><br>
+						<input type="text" name="gender" placeholder="Gender" class="inpt" required><br><br>
+						<input type="email" name="email" placeholder="E-mail" class="inpt" required><br><br>
+						<input type="text" name="tel_no" placeholder="Tel. No." class="inpt" required><br><br>
+						<input type="password" name="password" placeholder="Password" class="inpt" required><br><br>
+						<input type="password" name="repassword" placeholder="Confirm Password" class="inpt" required><br><br>
 						<input type="submit" name="login" value="Sign Up">
 					</form>
 				</div>

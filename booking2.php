@@ -28,37 +28,152 @@
 		}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Booking 2</title>
+	<title>Booking</title>
+	<link href="Style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form action="booking3.php" method="post">
-		<?php 
-			echo "First Name : ";
-			echo "<input type ='text' name='first_name1' value='".$first_name."'><br>";
-			echo "Last Name : ";
-			echo "<input type ='text' name='last_name1' value='".$last_name."'><br>";
-			echo "E-mail : ";
-			echo "<input type ='text' name='email1' value='".$email."'><br>";
-			echo "Tel. No. : ";
-			echo "<input type ='text' name='tel_no1' value='".$tel_no."'><br>";
-			echo "Gender : ";
-			echo "<input type ='text' name='gender1' value='".$gender."'><br>"; 
+	<div class="body">
+		<div class="nav">
+			<ul>
+				<li><a href="Home.php">Home</a></li>
+				<li><a href="Events.php">Events</a></li>
+				<li><a href="Pictures.php">Portfolio</a></li>
+				<li><a href="Booking.php">Booking</a></li>
+				<li><a href="About Me.php">About Us</a></li>
+			</ul>
+		</div>
+		<div>
+			<center>
+			<div id="intro">	
+				<form action="booking3.php" method="post" class="form">
+					<table>
+						<?php
+							echo "<tr>"; 
+								echo "<td>";
+									echo "First Name : ";
+								echo "</td>";
+								echo "<td>";
+									echo "<input type ='text' name='first_name1' value='".$first_name."' class='inpt'><br>";
+								echo "</td>";
+							echo "</tr>";
+							
+							echo "<tr>";
+								echo "<td>";
+									echo "Last Name : ";
+								echo "</td>";
+								echo "<td>";
+									echo "<input type ='text' name='last_name1' value='".$last_name."' class='inpt'><br>";
+								echo "</td>";
+							echo "</tr>";
+							
+							echo "<tr>";
+								echo "<td>";
+									echo "E-mail : ";
+								echo "</td>";
+								echo "<td>";
+									echo "<input type ='text' name='email1' value='".$email."' class='inpt'><br>";
+								echo "</td>";
+							echo "</tr>";
+							
+							echo "<tr>";
+								echo "<td>";
+									echo "Tel. No. : ";
+								echo "</td>";
+								echo "<td>";
+									echo "<input type ='text' name='tel_no1' value='".$tel_no."' class='inpt'><br>";
+								echo "</td>";
+							echo "</tr>";
+							
+							echo "<tr>";
+								echo "<td>";
+									echo "Gender : ";
+								echo "</td>";
+								echo "<td>";
+									echo "<input type ='text' name='gender1' value='".$gender."' class='inpt'><br>";
+								echo "<td>"; 
+							echo "</tr>";
+						?>
+						<tr>
+							<td>
+								From :
+							</td>
+							<td> 
+								<input type="date" name="from_date" class='inpt' required><br>
+							</td>
+						</tr>
 
-		?>
-		From : 
-		<input type="date" name="from_date"><br>
-		To : 
-		<input type="date" name="to_date"><br>
-		Number of adults : 
-		<input type="text" name="number_of_adults"><br>
-		Number of children : 
-		<input type="text" name="number_of_childs"><br>
-		Number of rooms : 
-		<input type="text" name="rooms"><br>
-		<input type="submit" name="submit" value="Submit"><br>
-	</form>
+						<tr>
+							<td>
+								To :
+							</td>
+							<td> 
+								<input type="date" name="to_date" class='inpt' required><br>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								Number of adults :
+							</td>
+							<td> 
+								<input type="number" name="number_of_adults" min='0' class='inpt'required><br>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								Number of children :
+							</td>
+							<td> 
+								<input type="number" name="number_of_childs" min='0' class='inpt' required><br>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								Number of rooms : 
+							</td>
+							<td>
+								<input type="number" min='0' name="rooms" class='inpt' required><br>
+							</td>
+						</tr>
+					</table>
+					<br><br><br>
+					<div class="inpt">
+						<input type="submit" name="submit" value="Submit"><br>
+					</div>
+						
+				</form>
+				<br>
+				<br>
+				<br>
+			</div>
+			</center>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div>
+			<marquee id="marqueetool">Lemonardo Resort</marquee>
+		</div>
+		<div id="like">
+			<p>Like Me...</p>
+		</div>
+
+		<div id="mar">
+			<ul>
+				<li><img src="Images/facebook1.png" id="marqueeim"></li>
+				<li><img src="Images/blogger.png" id="marqueeim"></li>
+				<li><img src="Images/twitter.png" id="marqueeim"></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>			
+	
 </body>
 </html>
+<?php mysqli_close($connection); ?>
