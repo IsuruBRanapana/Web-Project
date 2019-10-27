@@ -44,7 +44,7 @@ function carousel() {
 
 		</div>
 		<div id="intro">
-			<h2 align="centre">Introduction</h2>
+			<h2 align="centre">Details</h2>
 			<p>
 				<img class="introim" src="Images/Location.jpg">
 				The R&C Hotel is a modern, elegant 4-star hotel overlooking the sea, perfect for a romantic, charming vacation, in the enchanting setting of Indian Ocean and the Sri Lankan Sea.
@@ -69,7 +69,7 @@ function carousel() {
 			<p>
 				<img src="Images/Facilities.jpg" class="introim">
 				The rooms at the R&C Hotel are new, well-lit and inviting. Our reception staff will be happy to help you during your stay Sri Lanka, suggesting itineraries, guided visits and some good restaurants in the historic centre.
-				<span><a href="About Me.php">Read More...</span></a>
+				<span><a href="About Me.php">Read here...</span></a>
 				<br>
 				<br>
 				<br>
@@ -109,7 +109,7 @@ function carousel() {
 			<p>
 				<img src="Images/Breakfast.jpg" class="introim">
 				Available services include Voip telephone – ideal for low-cost international calls – Wi-Fi internet connection, breakfast and 24-hour reception.
-				<span><a href="About Me.php">Read More...</span></a>
+				<span><a href="About Me.php">Read here...</span></a>
 				<br>
 				<br>
 				<br>
